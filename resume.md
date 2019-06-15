@@ -40,4 +40,4 @@ title: Resume
 ## Additional Experience
 - **S.V. Cyclades** (2015-2017)  
 *Committee chairman*  
-As I very much enjoy playing board games in my spare time, I used to lead the committee at my student society that regularly organized events concerned with (board) games.
+As I enjoy playing board games in my spare time, I used to lead the committee at my student society that regularly organized events concerned with (board) games.
