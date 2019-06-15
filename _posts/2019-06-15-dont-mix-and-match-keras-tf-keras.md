@@ -30,7 +30,7 @@ def create_model():
               metrics=['accuracy'])
     return model
 ```
-<br>
+
 Imagine that for some reason we want to load the created model and extend it with an additional layer.
 `extend_model.py` will do this, after which it performs a single prediction.
 ```python
@@ -49,7 +49,7 @@ print(pred)
 # Prints [[0.14706095 0.13719702 0.07847318 0.07847318 0.13134125 0.07847318 0.11356177 0.07847318 0.07847318 0.07847318]]
 # (depending on random initialization, of course)
 ```
-<br>
+
 Note that in both files we have used Keras. Now, problems arise if, in any of the two files, we replace `import keras` with `import tensorflow.keras as keras`. This will produce an error such as
 ```
 Traceback (most recent call last):
@@ -109,7 +109,7 @@ b: <tensorflow.python.client.session.Session object at 0x109167588>
 b: <tensorflow.python.client.session.Session object at 0x12790c748>
 ```
 We see that unlike Tensorflow, Keras initializes a default session, which, within the same runtime, is always the same. However, the default session of `keras` is different of that of `tensorflow.keras`.
-<br>
+
 However, if this would indeed be the culprit, it would mean that we could mitigate the problem by manually fixing the difference in sessions:
 ```python
 import keras as k1
